@@ -149,7 +149,7 @@ function App() {
 
       <main className='wrap'>
         <Routes>
-          <Route path='/ANOVE' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/pages/Brand' element={<Brand />} />
           <Route path='/pages/Shop' element={<Shop />}>
             <Route path='best' element={<ShopBest />} />
