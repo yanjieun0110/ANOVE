@@ -6,7 +6,6 @@ export default function Join() {
   const [totalTerms, setTotalTerms] = useState(false)
   const [TermsItems, setTermsItems] = useState([])
   const [showPopup, setShowPopup] = useState(false)
-  const [userId, setUserId] = useState('')
 
   const termsIds = ['terms01', 'terms02', 'terms03', 'terms04', 'terms05']
 

@@ -14,6 +14,7 @@ import ShopHair from './pages/ShopHair';
 import ShopStyle from './pages/ShopStyle';
 import ShopSet from './pages/ShopSet';
 import Event from './pages/Event';
+import EventDetail from './components/EventDetail';
 import Community from './pages/Community';
 import Membership from './pages/Membership';
 import Login from './pages/Login';
@@ -160,6 +161,7 @@ function App() {
 
           <Route path='/pages/Shop/detail/:id' element={<Detail />} />
           <Route path='/pages/Event' element={<Event />} />
+          <Route path='/pages/Event/detail/:id' element={<EventDetail />} />
           <Route path='/pages/Community' element={<Community />} />
           <Route path='/pages/Community/Membership' element={<Membership />} />
           <Route path='/pages/Login' element={<Login />} />
