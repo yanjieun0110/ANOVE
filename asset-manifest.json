@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ANOVE/static/css/main.a5af4046.css",
-    "main.js": "/ANOVE/static/js/main.2469373c.js",
+    "main.js": "/ANOVE/static/js/main.0e749dd2.js",
     "static/js/453.97a59c9c.chunk.js": "/ANOVE/static/js/453.97a59c9c.chunk.js",
     "static/media/chat_icon.png": "/ANOVE/static/media/chat_icon.bb18ec2175a4f17e0d5c.png",
     "static/media/slick.svg": "/ANOVE/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,11 +10,11 @@
     "static/media/slick.woff": "/ANOVE/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ANOVE/index.html",
     "main.a5af4046.css.map": "/ANOVE/static/css/main.a5af4046.css.map",
-    "main.2469373c.js.map": "/ANOVE/static/js/main.2469373c.js.map",
+    "main.0e749dd2.js.map": "/ANOVE/static/js/main.0e749dd2.js.map",
     "453.97a59c9c.chunk.js.map": "/ANOVE/static/js/453.97a59c9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5af4046.css",
-    "static/js/main.2469373c.js"
+    "static/js/main.0e749dd2.js"
   ]
 }
