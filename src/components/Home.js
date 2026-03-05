@@ -279,7 +279,7 @@ export default function Home() {
       <LogoWrap>
         <LogoInner>
           {[...logos, ...logos].map((logo, idx) => (
-            <LogoItem key={idx} src={logo} alt="logo" />
+            <LogoItem key={idx} src={process.env.PUBLIC_URL + logo} alt="logo" />
           ))}
         </LogoInner>
       </LogoWrap>
