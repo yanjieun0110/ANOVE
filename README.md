@@ -66,6 +66,51 @@ import Cart from './pages/Cart';
 ```
 ##
 
+## /* Styled-components / CSS Modules */
+→ Header와 Footer는 전역 CSS(`App.css`)로 처리하고, 페이지별 스타일링은 `Styled-components`와 `CSS Modules`를 활용해 모듈화했습니다.
+const ProWrap = styled.section`
+    position: relative;
+    &:hover .pro_action {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  `;
+
+  let layoutStyle = {
+    wrap: {
+      width: '1084px',
+      margin: '0 auto 165px',
+      display: 'flex',
+      justifyContent: 'space-between',
+    },
+    box: {
+      width: '348px',
+      margin: '0 0 20px',
+      padding: 0,
+    },
+    title: {
+      color: '#202945',
+      fontSize: '18px',
+      fontWeight: 600,
+      margin: '10px 0',
+    },
+    sub: {
+      color: '#A5A4A5',
+      fontSize: '14px',
+      margin: 0
+    },
+    price: {
+      color: '#202945',
+      fontWeight: 600,
+      margin: '10px 0 0'
+    },
+    DelPri: {
+      color: '#A5A4A5',
+      fontSize: '14px',
+      margin: 0
+    }
+  }
+
 ## /* Shop Oulet & sort */
 → Shop 페이지에서 상품 리스트를 렌더링하고,
 React Router의 Outlet context를 활용하여 정렬 상태(sort)를 하위 페이지(best, hair, style, set)에 전달했습니다.
