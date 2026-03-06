@@ -71,3 +71,37 @@
 </Container>
 ```
 
+/* event layout & :id */
+```js
+// evnet
+<EventWrap>
+  <Title>EVENT</Title>
+
+  <Container style={layoutStyle.wrap}>
+    <Row style={{gap: '20px'}}>
+      {
+       events.map((event, index) => {
+        return (
+          <Col key={index} style={layoutStyle.box}>
+            <Link to={`/pages/Event/detail/${index}`} style={{textDecoration: 'none'}}>
+              <img src={event.img} alt="상품이미지" />
+              <p style={layoutStyle.txt}>{event.title}</p>
+              <p style={layoutStyle.txt}>{event.sub}</p>
+            </Link>
+          </Col>
+        )
+       })
+      }
+    </Row>
+  </Container>
+</EventWrap>
+
+//eventDetail
+<div style={{ width: "1084px", margin: "150px auto" }}>
+  <Title>{event.title + event.sub}</Title>
+
+  {event.detail.map((src, index) => (
+    <img key={index} src={src} alt="event detail" />
+  ))}
+</div>
+```
