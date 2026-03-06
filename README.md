@@ -124,6 +124,8 @@ React Router의 Outlet context를 활용하여 정렬 상태(sort)를 하위 페
     </Row>
   </Container>
 </EventWrap>
+```
+
 
 ## /* 찜하기 & 장바구니 버튼 구현 */
 → 상품 카드에 찜하기와 장바구니 버튼을 구현했습니다.
@@ -131,6 +133,7 @@ React Router의 Outlet context를 활용하여 정렬 상태(sort)를 하위 페
 - 장바구니 버튼 클릭 시 Redux dispatch를 이용해 상품 데이터를 전역 상태에 추가하고,
   상품이 추가되면 장바구니 안내 팝업이 표시되도록 구현했습니다.
 
+```js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from './store';
@@ -172,13 +175,15 @@ export default function ProductAction({ item, setShowMessage }) {
     </ProAction>
   );
 }
+```
 
-## /* */
+## /* 장바구니 전역 관리 */
 → Redux Toolkit을 사용하여 장바구니 상태를 전역으로 관리했습니다.
 - 동일 상품이 장바구니에 존재하면 수량 증가, 없으면 새로 추가
 - 상품 수량 증가/감소, 직접 수량 변경
 - 상품 개별 삭제 및 선택 상품 일괄 삭제
 
+```js
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
 const cart = createSlice({
@@ -217,11 +222,13 @@ export const { addItem, addCount, subCount, deleteItem, deleteItems, changeCount
 export default configureStore({
   reducer: { cart: cart.reducer }
 });
+```
 
 ## /* eventDetail:id 파라미터 */
 → React를 활용하여 이벤트 상세 페이지를 구현했습니다.
 URL 파라미터(`id`)를 기반으로 이벤트 데이터를 조회하고, 제목과 서브 타이틀을 상단에 표시하며, 상세 이미지 배열을 map으로 반복 렌더링하여 화면에 출력하도록 구현했습니다.
 
+```js
 <div style={{ width: "1084px", margin: "150px auto" }}>
   <Title>{event.title + event.sub}</Title>
 
