@@ -68,6 +68,8 @@ import Cart from './pages/Cart';
 
 ## /* Styled-components / CSS Modules */
 → Header와 Footer는 전역 CSS(`App.css`)로 처리하고, 페이지별 스타일링은 `Styled-components`와 `CSS Modules`를 활용해 모듈화했습니다.
+
+```css
 const ProWrap = styled.section`
     position: relative;
     &:hover .pro_action {
@@ -110,6 +112,7 @@ const ProWrap = styled.section`
       margin: 0
     }
   }
+```
 
 ## /* Shop Oulet & sort */
 → Shop 페이지에서 상품 리스트를 렌더링하고,
