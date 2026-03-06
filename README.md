@@ -39,27 +39,7 @@
 </Routes>
 ```
 ##
-/ 
-├── Home
-├── Brand (/pages/Brand)
-├── Shop (/pages/Shop)
-│   ├── Best (/pages/Shop/best)
-│   ├── Hair (/pages/Shop/hair)
-│   ├── Style (/pages/Shop/style)
-│   └── Set (/pages/Shop/set)
-│
-├── Shop Detail (/pages/Shop/detail/:id)
-│
-├── Event (/pages/Event)
-│   └── Event Detail (/pages/Event/detail/:id)
-│
-├── Community (/pages/Community)
-│   └── Membership (/pages/Community/Membership)
-│
-├── Login (/pages/Login)
-├── Join (/pages/Join)
-└── Cart (/pages/Cart)
-##
+
 
 /* Shop layout Oulet */
 ```js
