@@ -43,8 +43,10 @@
 
 /* Shop layout Oulet */
 ```js
+// shop.js
 <Outlet context={{ sort }} />
 
+// ...pages
 <Container style={layoutStyle.wrap}>
   <Row style={{ gap: '20px' }}>
     {sortedData.map(item => (
