@@ -100,33 +100,6 @@ React Router의 Outlet context를 활용하여 정렬 상태(sort)를 하위 페
 </Container>
 ```
 
-/* event layout & :id */
-```js
-// evnet
-<EventWrap>
-  <Title>EVENT</Title>
-
-  <Container style={layoutStyle.wrap}>
-    <Row style={{gap: '20px'}}>
-      {
-       events.map((event, index) => {
-        return (
-          <Col key={index} style={layoutStyle.box}>
-            <Link to={`/pages/Event/detail/${index}`} style={{textDecoration: 'none'}}>
-              <img src={event.img} alt="상품이미지" />
-              <p style={layoutStyle.txt}>{event.title}</p>
-              <p style={layoutStyle.txt}>{event.sub}</p>
-            </Link>
-          </Col>
-        )
-       })
-      }
-    </Row>
-  </Container>
-</EventWrap>
-```
-
-
 ## /* 찜하기 & 장바구니 버튼 구현 */
 → 상품 카드에 찜하기와 장바구니 버튼을 구현했습니다.
 - useState를 사용하여 찜 상태를 관리하고 클릭 시 아이콘이 토글되도록 처리했습니다.
@@ -222,6 +195,31 @@ export const { addItem, addCount, subCount, deleteItem, deleteItems, changeCount
 export default configureStore({
   reducer: { cart: cart.reducer }
 });
+```
+## /* event layout */
+```js
+// evnet
+<EventWrap>
+  <Title>EVENT</Title>
+
+  <Container style={layoutStyle.wrap}>
+    <Row style={{gap: '20px'}}>
+      {
+       events.map((event, index) => {
+        return (
+          <Col key={index} style={layoutStyle.box}>
+            <Link to={`/pages/Event/detail/${index}`} style={{textDecoration: 'none'}}>
+              <img src={event.img} alt="상품이미지" />
+              <p style={layoutStyle.txt}>{event.title}</p>
+              <p style={layoutStyle.txt}>{event.sub}</p>
+            </Link>
+          </Col>
+        )
+       })
+      }
+    </Row>
+  </Container>
+</EventWrap>
 ```
 
 ## /* eventDetail:id 파라미터 */
